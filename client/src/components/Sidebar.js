@@ -13,8 +13,8 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 import {
-  SettingsOutlined,
   ChevronLeft,
   ChevronRightOutlined,
   HomeOutlined,
@@ -192,9 +192,9 @@ const Sidebar = ({
               })}
             </List>
           </Box>
-          <Box position="absolute" bottom="2rem">
+          <Box position="absolute" bottom="2rem" width="100%">
             <Divider />
-            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
+            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 2rem">
               <Box
                 component="img"
                 alt="profile"
@@ -219,9 +219,14 @@ const Sidebar = ({
                   {user.occupation}
                 </Typography>
               </Box>
-              <SettingsOutlined
-                sx={{ color: theme.palette.secondary[300], fontSize: "25px" }}
-              />
+              <IconButton>
+                <ExitToAppOutlinedIcon
+                  sx={{
+                    color: theme.palette.secondary[300],
+                    fontSize: "25px",
+                  }}
+                />
+              </IconButton>
             </FlexBetween>
           </Box>
         </Drawer>

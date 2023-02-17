@@ -38,7 +38,6 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
       sx={{
         position: "static",
         background: "none",
-        boxShadow: `0 5px 5px ${theme.palette.grey[1000]}`,
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>

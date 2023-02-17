@@ -6,7 +6,6 @@ import {
   Email,
   PointOfSale,
   PersonAdd,
-  Traffic,
 } from "@mui/icons-material";
 import {
   Box,
@@ -94,7 +93,11 @@ const Dashboard = () => {
           description="Since Last Month"
           icon={
             <Email
-              sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
+              sx={{
+                color: theme.palette.secondary[300],
+                fontSize: "26px",
+                cursor: "pointer",
+              }}
             />
           }
         />
@@ -105,7 +108,11 @@ const Dashboard = () => {
           description="Since Last Month"
           icon={
             <PointOfSale
-              sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
+              sx={{
+                color: theme.palette.secondary[300],
+                fontSize: "26px",
+                cursor: "pointer",
+              }}
             />
           }
         />
@@ -125,7 +132,11 @@ const Dashboard = () => {
           description="Since Last Month"
           icon={
             <PersonAdd
-              sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
+              sx={{
+                color: theme.palette.secondary[300],
+                fontSize: "26px",
+                cursor: "pointer",
+              }}
             />
           }
         />
@@ -136,7 +147,11 @@ const Dashboard = () => {
           description="Since Last Month"
           icon={
             <PersonAdd
-              sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
+              sx={{
+                color: theme.palette.secondary[300],
+                fontSize: "26px",
+                cursor: "pointer",
+              }}
             />
           }
         />
